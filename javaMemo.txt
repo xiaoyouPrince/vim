@@ -1,0 +1,7 @@
+public class AppMain{
+    public static void main(String[], args){
+        String msg01, msg02, msg03;
+        String apple01, apple02, apple03;
+        System.out.println("Hello World");
+    }
+}

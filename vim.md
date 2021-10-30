@@ -20,6 +20,23 @@ vim 是一种编辑方式、优点在于：
 - 3dd 就是 删除 3 行文字
 - vim . 查看当前的档案目录
 
+## 一些示例
+
+```
+public class AppMain{
+    public static void main(String[], args){
+        String msg01, msg02, msg03;
+        String apple01, apple02, apple03;
+        System.out.println(""Hello World);
+    }
+}
+```
+
+选取指令组合
+- 选取单字 `v w`
+- 选取到 " `w t "` -- word to "
+- 选取到 " `v f "` -- 找到 "
+
 ## 模式切换
 
 ![1](media/16330802836528/1.png)
@@ -102,6 +119,19 @@ vim 共有 48 个暂存器，我们可以设置暂存器和系统粘贴板共通
 - `=` 对选取的内容进行缩进排版。会自动根据当前语言上下文进行缩进排版
 
 ### 编辑多个档案 01
+
+在命令行模式中
+
+- `:e {FileName}` 开始档案
+- `:tabe {档案名称}` 页签的方式开启指定档案
+- `gt` 切换到下一个分页
+- `gT` 切换到上一个分页
+- `:new` 新建立一个分割视窗 `:vnew` 新建一个垂直分割视窗
+- `Ctrl + w + hjkl` 切换到指定页签
+- `Ctrl + w` 循环移动页签
+- `vim -o *` 水平页签方式打开所有文档、 `vim -O *`垂直页签方式打开所有文档
+- `vim -p *` 用页签的方式开启当前目录下的所有档案
+
 
 https://www.youtube.com/watch?v=pi4JzuzcP6Q&list=PLBd8JGCAcUAH56L2CYF7SmWJYKwHQYUDI&index=10
 
